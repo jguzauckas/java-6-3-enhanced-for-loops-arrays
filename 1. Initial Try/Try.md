@@ -14,8 +14,6 @@ In the `Try.java` file, there is a section of code that is supposed to produce t
 9
 ```
 
-It is supposed to do this through an `int` array called `nums` that holds those values, in order, and a `for` loop that iterates through `nums` and prints out each individual value on its own line.
-
-Can you fix the code to properly produce the output above?
+Can you fix the enhanced `for` loop header and the print statement to properly produce this output?
 
 Once you have gotten to just warnings, save the Java file and commit and push your changes via GitHub Desktop.

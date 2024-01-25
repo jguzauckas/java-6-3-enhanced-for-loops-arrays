@@ -1,21 +1,65 @@
 # Understanding Check
 
-It can often be frustrating that arrays can only store one type of data, but there are two ways that we typically have as programmers to get around this:
-- **Paired arrays** - This is where we make two or more arrays that store different data (can, but does not have to be, different types) that are all the same length. We assign these values such that values at the same index in the different arrays are related. For example, let's say I wanted to store `name` and `age`. I could do this with `String` and `int` arrays that are paired, like this example:
+Fill in the `Course` class in `Course.java` with the following information:
+- Instance variables to store period (1, 2, 3, or 4), day ("A" or "B"), name (ex. "Computer Science A"), level (ex. "College", "Honors", etc.), and grade (ex. 75).
+- A constructor that has parameters for all instance variables.
+- Accessor methods for each instance variables.
+- A `toString` method that creates a result like `3A AP Computer Science A - 75` or `4B AP Computer Science A - 94` using the instance variables
 
-```java
-String[] names = new String[] {"John", "Will", "Owen"};
-int[] ages = new int[] {25, 26, 23};
+In `Understanding.java`, use a `Scanner` object to ask the user how many courses they have in their schedule. Use the entered value to create an array of `Course` objects with that length.
+
+For each element of the array, ask the user for information about a course to collect all the information needed to construct a new object. Once constructed, assign this new object to the array. When completed, the array should be filled with courses that align with the user's schedule.
+
+Go through the course array and print out the user's schedule so that they know when their classes are.
+
+Here is a sample output:
+
 ```
+How many courses are you taking? 6
 
-In this example, index `0` holds `"John"` in `names` and `25` in `ages`, which are paired values, so John's age is 25. Similarly, `"Will"` is `26` and `"Owen"` is `23`.
+Course Period: 1
+Course Day: A
+Course Name: Data Science 1
+Course Level: College
+Course Grade: 100
 
-- **Custom object arrays** - If there pieces of information belong together, another solution is to make a custom class for that information to bundle it together. Then you can just make a single array of the information, and everything that is related is stored in the same object! With our example above, if we had a `Person` class, we could have done this instead:
+Course Period: 2
+Course Day: A
+Course Name: Computer Science 1
+Course Level: College
+Course Grade: 95
 
-```java
-Person[] friends = new Person[] {new Person("John", 25), new person("Will", 26), new Person("Owen", 23)};
+Course Period: 3
+Course Day: A
+Course Name: Computer Science A
+Course Level: AP
+Course Grade: 85
+
+Course Period: 1
+Course Day: B
+Course Name: Algebra 2
+Course Level: College
+Course Grade: 91
+
+Course Period: 3
+Course Day: B
+Course Name: Computer Science 1
+Course Level: College
+Course Grade: 67
+
+Course Period: 4
+Course Day: B
+Course Name: Computer Science A
+Course Level: AP
+Course Grade: 85
+
+Here is your course schedule:
+1A College Data Science 1 - 100
+2A College Computer Science 1 - 95
+3A AP Computer Science A - 85
+1B College Algebra 2 - 91
+3B College Computer Science 1 - 67
+4B AP Computer Science A - 85
 ```
-
-In `Understanding.java`, you are going to try both of these methods to save some information and print out the relationships. You are going to store your school courses and their grades from Quarter 2. Start by making paired arrays for your course names and grades, and use loops to print out pairs like `"AP Computer Science was a 78"`. Then, write a basic class called `Course` in the `Course.java` file and underneath your other work in `Understanding.java`, write this alternative way of doing it with an array of `Course` objects. Ultimately, your code should print out the pairs twice, once with paired arrays, and once with object arrays. The two copies of the output should match.
 
 Once you have gotten to just warnings, save the Java file and commit and push your changes via GitHub Desktop.

@@ -6,7 +6,12 @@ With the basic knowledge of traversing arrays using loops, we can look at an alt
 
 This section covers the following material:
 
-- 
+- The Need for Enhanced `for` Loops
+- Setting Up Enhanced `for` Loop
+- Equivalence of `for` and Enhanced `for` Loops
+- Drawbacks of Enhanced `for` Loops
+    - Not Modifying Elements
+    - Lack of Access to Index
 
 To use this repository, start with the `notes.md` document, referencing the various `.java` documents as you go to see the examples in action.
 
